@@ -13,7 +13,7 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.new(song_params)
-    binding.pry
+    # binding.pry
     # Song.artist_name=(params[:song][:artist])
 
     if @song.save
